@@ -47,10 +47,6 @@
   box-sizing: border-box;
 }
 
-.iconoAta {
-  height : 50px;
-}
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -10146,4 +10142,8 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.iconoAta {
+  height : 50px;
 }
