@@ -47,6 +47,10 @@
   box-sizing: border-box;
 }
 
+.iconoAta {
+  height : 50px;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
