@@ -10147,3 +10147,41 @@ header.masthead h1 {
 .iconoAta {
   height : 50px;
 }
+
+
+
+#blog .container-fluid, #blog .container-sm, #blog .container-md, #blog .container-lg, #blog .container-xl {
+  max-width: 1920px;
+}
+#blog .container-fluid .blog-box, #blog .container-sm .blog-box, #blog .container-md .blog-box, #blog .container-lg .blog-box, #blog .container-xl .blog-box {
+  position: relative;
+  display: block;
+}
+#blog .container-fluid .blog-box .blog-box-caption, #blog .container-sm .blog-box .blog-box-caption, #blog .container-md .blog-box .blog-box-caption, #blog .container-lg .blog-box .blog-box-caption, #blog .container-xl .blog-box .blog-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(59, 116, 223, 0.9);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#blog .container-fluid .blog-box .blog-box-caption .project-category, #blog .container-sm .blog-box .blog-box-caption .project-category, #blog .container-md .blog-box .blog-box-caption .project-category, #blog .container-lg .blog-box .blog-box-caption .project-category, #blog .container-xl .blog-box .blog-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#blog .container-fluid .blog-box .blog-box-caption .project-name, #blog .container-sm .blog-box .blog-box-caption .project-name, #blog .container-md .blog-box .blog-box-caption .project-name, #blog .container-lg .blog-box .blog-box-caption .project-name, #blog .container-xl .blog-box .blog-box-caption .project-name {
+  font-size: 1.2rem;
+}
+#blog .container-fluid .blog-box:hover .blog-box-caption, #blog .container-sm .blog-box:hover .blog-box-caption, #blog .container-md .blog-box:hover .blog-box-caption, #porblogtfolio .container-lg .blog-box:hover .blog-box-caption, #blog .container-xl .blog-box:hover .blog-box-caption {
+  opacity: 1;
+}
