@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>AtaraxiaDevs</title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/fullpage.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="fullpage">
+      <!-- SECCIÓN INICIO-->
+      <div class="section active" id="section0">
+        <div id="portada">
+          <ul>
+            <li>
+              <img src="assets/logo_definitivo.png" id="logo" />
+            </li>
+            <li>
+              <h1>Ataraxia Devs</h1>
+              <h2>Olvidate y ya está, ¡CRACK!</h2>
+            </li>
+          </ul>
+        </div>
+
+        <img src="assets/mandala.png" class="rotate mandalaDerecho" />
+        <img src="assets/mandala.png" class="rotate mandalaIzquierdo" />
+      </div>
+
+      <div class="section" id="section1">
+        <ul id="mosaic">
+          <li><h1>EQUIPO</h1></li>
+          <li>
+            <img src="assets/iconDesarrolladorAlberto.png" class="teamAvatar" />
+            <img src="assets/Celtia.png" class="teamAvatar" />
+            <img src="assets/DaniA.png" class="teamAvatar" />
+          </li>
+          <li>
+            <img src="assets/Dani.png" class="teamAvatar" />
+
+            <img src="assets/Pablo.jpg" class="teamAvatar" />
+
+            <img src="assets/Wei.png" class="teamAvatar" />
+          </li>
+          <a href="equipo.htm"
+            ><li class="button">
+              <span>Conócenos</span>
+            </li></a
+          >
+        </ul>
+
+        <img src="assets/mandala.png" class="rotate mandalaDerecho" />
+        <img src="assets/mandala.png" class="rotate mandalaIzquierdo" />
+      </div>
+
+      <!-- ------------ SECTION 2 ------------- -->
+
+      <div class="section" id="section2">
+        <div class="slide">
+          <ul>
+            <li><h1>Break Troops Fast</h1></li>
+            <li>
+              <img src="assets/promo.png" class="juegos" />
+            </li>
+            <li class="button">
+              <a><span>Ver Más</span></a>
+            </li>
+            <a href="https://ataraxiadevs.itch.io/breaktroopsfast"
+              ><li class="button">
+                <span>Jugar</span>
+              </li></a
+            >
+          </ul>
+        </div>
+
+        <div class="slide">
+          <ul>
+            <li><h1>Próximamente</h1></li>
+            <li>
+              <img src="assets/coming.png" class="juegos" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- --------------- SECTION 3  ------------- -->
+      <div class="section" id="section3">
+        <div class="contenido">
+          <ul>
+            <li><h1>Sigue Nuestro Trabajo</h1></li>
+            <li>
+              <a href="https://twitter.com/AtaraxiaDevs"
+                ><i class="fab fa-twitter fa-5x mb-3 text-muted"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCf6IyOGVFrC8l-6_nfMpzhQ"
+                ><i class="fab fa-youtube fa-5x mb-3 text-muted"></i
+              ></a>
+              <a href="https://github.com/AtaraxiaDevs"
+                ><i class="fab fa-github fa-5x mb-3 text-muted"></i
+              ></a>
+              <a href="https://ataraxiadevs.itch.io/"
+                ><i class="fab fa-itch-io fa-5x mb-3 text-muted"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <img src="assets/mandala.png" class="rotate mandalaDerecho" />
+        <img src="assets/mandala.png" class="rotate mandalaIzquierdo" />
+      </div>
+    </div>
+
+    <div id="navbar">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="equipo.htm">Equipo</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <script src="js/fullpage.js"></script>
+
+    <script type="text/javascript">
+      var notMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+        ? false
+        : true;
+
+      console.log(notMobile);
+      var myFullpage = new fullpage("#fullpage", {
+        sectionsColor: [
+          "#f2f2f2",
+          "#4BBFC3",
+          "#7BAABE",
+          "whitesmoke",
+          "#ccddff",
+        ],
+
+        navigation: notMobile,
+        navigationTooltips: ["Inicio", "Equipo", "Juegos", "Redes"],
+      });
+    </script>
+  </body>
+</html>
