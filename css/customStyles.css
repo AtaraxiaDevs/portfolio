@@ -1,0 +1,310 @@
+#navbar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin-right: 25px;
+    display:block;
+    color:white;
+    font-family: 'Amatic SC', cursive; 
+    font-weight: 1000;
+    font-size: 15pt;
+}
+
+#navbar li{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: white
+
+
+}
+
+
+#navbar li a:hover{
+    color:grey;
+    text-decoration: underline;
+}
+#navbar ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+
+.content{
+    display: flex;
+}
+
+#portada{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: COLUMN;
+    
+    z-index: 99;
+    color: white;
+
+
+    font-family: 'Amatic SC', cursive; 
+
+
+}
+
+h1{
+    font-style: bold;
+    font-size: 50pt;
+}
+h2{
+    font-size: 30pt;
+}
+
+#logo{
+    width: 10em;
+}
+
+.rotate{
+    width: 50vh;
+    position: absolute;
+    top: 25vh;
+ 
+}
+
+@keyframes rotationLeft {
+		from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}
+}
+
+@keyframes rotationRight {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(-359deg);
+    }
+}
+
+
+.mandalaDerecho{
+    left: -25vh;
+    z-index: 1;
+    animation: rotationLeft 60s infinite linear;
+   
+}
+
+.mandalaIzquierdo{
+    right: -25vh;
+    
+    animation: rotationRight 60s infinite linear;
+}
+
+
+/*-------SECTION 1--------*/
+
+.teamAvatar{
+    width:15vh;
+    background-color: grey;
+    border-style:outset;
+    border-radius: 50%;
+
+    z-index: 100;
+}
+
+#mosaic {
+    position: relative;;
+    z-index: 90;
+  }
+  
+
+  
+
+  .button {
+    
+    border-radius: 4px;
+    background-color: #5c98bc;
+    border: 4px filled black;;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+    display: inline-block;
+    margin-top: 10px;
+
+    box-shadow: 2px 2px grey;
+
+    
+  }
+
+  .button:hover{
+    background-color: #2e4b57;
+
+  }
+  
+  .button span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/*----------- SECCTION 3 -------*/
+.juegos{
+    width:40vh;
+    height: 20vh;
+    height: auto;
+    border-style:solid;
+    border-radius: 255px 30px 225px 30px/30px 225px 30px 255px;
+    border-color: white;
+}
+
+
+.Constelatrix{
+    height: 25vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------- SECTIONS --------------*/
+#section0 {
+	background: linear-gradient(-45deg, #a0c4dc,#475a68,#5c98bc,#2e4b57);
+	background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    text-align: center;
+
+}
+
+#section1{
+	background: linear-gradient(-45deg, #a0c4dc,#475a68,#5c98bc,#2e4b57);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    text-align: center;
+    color: white;
+
+    font-family: 'Amatic SC', cursive; 
+}
+
+#section2{
+	background: linear-gradient(-45deg, #a0c4dc,#475a68,#5c98bc,#2e4b57);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    text-align: center;
+    color: white;
+
+    font-family: 'Amatic SC', cursive; 
+}
+
+#section3{
+	background: linear-gradient(-45deg, #a0c4dc,#475a68,#5c98bc,#2e4b57);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    text-align: center;
+    color: white;
+
+    font-family: 'Amatic SC', cursive; 
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ul{
+    list-style-type: none;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 40px;
+    position: absolute;;
+    bottom: 0;
+    
+}
+.fp-controlArrow.fp-next {
+    right: 40px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttColl{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.fab{
+    margin: 20px;
+}
+
+.contenido{
+    position: relative;
+    z-index: 99;
+}
+
+h3{
+    font-family: 'Amatic SC', cursive; 
+
+    color: white;
+}
+
+
+
+.cajaTexto{
+    display: inline-block;
+   widows: 1000px;
+}
