@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>AtaraxiaDevs</title>
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="assets/favicon.ico" />
+    
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+          rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@300&display=swap" rel="stylesheet">
+    
+        <link href="fullpage.css" rel="stylesheet" />
+        <link href="css/customStyles.css" rel="stylesheet" />
+        <style>
+            body{
+                background-color: #2e4b57;
+            }
+        </style>
+      </head>
+      <body>
+    
+        <header>
+          <div class="topnav" id="myTopnav">
+            <a href="blogList.htm">Blog</a>
+            <a href="equipo.htm">Equipo</a>
+            <a href="index.htm" >Inicio</a>
+           
+            
+          </div>
+        </header>
+
+        <div class="postText">
+          <h1>Links y Circuitos</h1>
+          <h2>Cómo surge la idea</h2>
+          <p>Al empezar con la lluvia de ideas del proyecto se planteo la idea de crear mazmorras y que los jugadores pudisen compartirlas. Esta idea nos parecio muy buena pues es una manera de que los usuarios que ya tenemos atraigan a sus amigos a probar el juego. Dado que el juego se transformó posteriormente en un juego de carreras, se nos ocurrió que una buena manera de implementar la idea fuese a través de los circuitos.</p>
+
+          <h2>Cómo planteamos el editor</h2>
+          <p>Celtia: La manera que se me ocurrió de crearlos fue a través de módulos: son piezas del circuito que se pueden rotar y conectar entre si para poder crear infinidad de mapas. </p>
+          <p>Cada módulo tiene 2 sockets que determinan qué lados pueden conectarse. Además, para que el jugador sepa visualmente que sockets están conectados y cuales no, añadimos unas particulas que se activan si el socket no esta conectado. </p>
+          <p>Una vez hemos cerrado el circuito, y tras haber añadido un solo cambio de línea, permitiendo así que el circuito sea justo al tener que recorrer los 4 carriles obligatoriamente, el jugador elegirá la meta y le podrá dar un nombre, cambiar el número de vueltas al circuito y guardarlo en la base de datos, generando así un código para poder ser compartido.</p>
+          
+          <h2>Qué se guarda en la base de datos</h2>
+          <p>Celtia: En cuanto al circuito se guarda información básica en forma de cadena de texto. Esta información recoge cada módulo del circuito en orden además de su tipo y su rotación. Esto se consigue gracias a los parsers internos que generan tanto el código una vez es completada la creación del circuito, como la importación del mismo para ser convertido a un circuito real.</p>
+
+          <h2>Qúe base de datos se usa</h2>
+          <p>Alberto: Dado que trabajamos con unity y webGL las opciones son bastante limitadas: las aplicaciones webGL no pueden procesar peticiones Http, por lo que la única manera de hacer peticiones a un servidor es através de peticiones REST. Es por eso que hemos decidio usar la realtime databse de Firesbase. Su uso era muy sencillo y con ayuda de librerias de C# podíamos conseguir de manera rápida los resultados deseados.</p>
+
+          <h2>Qué nos hubiese gustado implementar</h2>
+          <p>Desde el equipo trabajamos en la idea de compartir estos códigos a través de códigos QR, pero las limitaciones de unity en webGL no lo permitieron, dado que no nos permitía acceder a la cámara del móvil de manera sencilla.</p>
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+  </div>
+
+        
+        
+
+    </body>
+</html>

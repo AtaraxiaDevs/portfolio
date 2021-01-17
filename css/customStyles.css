@@ -362,11 +362,18 @@ h2 {
     width: 100%;
     height: 100%;
   }
+
+  .postText {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1281px) {
   .texto {
     margin: 300px;
+  }
+  .postText {
+    width: 1200px;
   }
 }
 
@@ -395,4 +402,11 @@ h2 {
   font-family: "Imbue", serif;
   color: #bfbfbf;
   font-size: 1.3em;
+}
+
+.postText h1 {
+  font-size: 1.8em;
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  color: white;
 }
