@@ -21,6 +21,25 @@
     <link href="css/customStyles.css" rel="stylesheet" />
   </head>
   <body>
+
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="#" class="text">Blog</a>
+        <a href="equipo.htm">Equipo</a>
+        <a href="#" class="active">Inicio</a>
+       
+        
+      </div>
+    </header>
+    
+      
+
+     
+      
+      
+
+ 
+
     <div id="fullpage">
       <!-- SECCIÓN INICIO-->
       <div class="section active" id="section0">
@@ -129,15 +148,11 @@
         <img src="assets/mandala.png" class="rotate mandalaDerecho" />
         <img src="assets/mandala.png" class="rotate mandalaIzquierdo" />
       </div>
+
+      
     </div>
 
-    <div id="navbar">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="equipo.htm">Equipo</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </div>
+    
 
     <script src="js/fullpage.js"></script>
 
@@ -163,7 +178,12 @@
 
         slidesNavigation: true,
         controlArrows: notMobile?true:false,
+        fixedElements: '#myTopnav',
       });
+
+
+
+   
     </script>
   </body>
 </html>

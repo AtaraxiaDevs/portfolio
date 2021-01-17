@@ -18,8 +18,21 @@
 
   <link href="fullpage.css" rel="stylesheet" />
   <link href="css/customStyles.css" rel="stylesheet" />
+
   </head>
   <body>
+
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="#">Blog</a>
+        <a href="#" class="active">Equipo</a>
+        <a href="index.htm" >Inicio</a>
+       
+        
+      </div>
+    </header>
+
+
     <div id="fullpage">
       <!-- SECCIÓN INICIO-->
       <div class="section active" id="section0">
@@ -119,7 +132,7 @@
 
             <li>
               <a href="https://github.com/FRoZeNDanieh"
-                ><i class="fab fa-github fa-5x mb-3 text-muted"></i
+                ><i class="fab fa-github fa-5x mb-3 text-muted wei"></i
               ></a>
             </li>
           </ul>
@@ -217,13 +230,7 @@
       </div>
     </div>
 
-    <div id="navbar">
-      <ul>
-        <li><a href="index.htm">Inicio</a></li>
-        <li><a href="#">Equipo</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </div>
+   
 
     <script src="js/fullpage.js"></script>
 
@@ -245,6 +252,7 @@
 
         slidesNavigation: true,
         controlArrows: notMobile?true:false,
+        fixedElements: '#myTopnav',
       });
     </script>
   </body>
